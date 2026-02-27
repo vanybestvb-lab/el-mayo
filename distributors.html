@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distributeurs — Ela Mayo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="site-header">
+      <div class="container inner">
+        <a href="index.html" class="logo-link"><img src="public/images/Logo.png" alt="Ela Mayo" class="logo"></a>
+        <nav class="nav-main">
+          <a href="index.html">Accueil</a>
+          <a href="story.html">Notre histoire</a>
+          <a href="shop.html">Boutique</a>
+          <a href="recipes.html">Recettes</a>
+          <a href="distributors.html">Distributeurs</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="cart.html" class="btn-icon" aria-label="Panier">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="cart-count" id="header-cart-count" style="display: none;">0</span>
+          </a>
+          <button type="button" class="btn-icon menu-toggle" id="menu-toggle" aria-label="Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <nav class="nav-main">
+          <a href="index.html">Accueil</a>
+          <a href="story.html">Notre histoire</a>
+          <a href="shop.html">Boutique</a>
+          <a href="recipes.html">Recettes</a>
+          <a href="distributors.html">Distributeurs</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <h1 class="page-title">Où nous trouver</h1>
+        <p class="page-intro">Retrouvez Ela Mayo chez nos distributeurs partenaires.</p>
+        <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;">
+          <label for="city" class="label" style="margin-bottom: 0;">Filtrer par ville</label>
+          <select id="city-filter" class="input" style="width: auto; min-width: 200px;">
+            <option value="">Toutes les villes</option>
+            <option value="Bordeaux">Bordeaux</option>
+            <option value="Lille">Lille</option>
+            <option value="Lyon">Lyon</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Nantes">Nantes</option>
+            <option value="Nice">Nice</option>
+            <option value="Paris">Paris</option>
+            <option value="Strasbourg">Strasbourg</option>
+            <option value="Toulouse">Toulouse</option>
+          </select>
+        </div>
+        <div id="distributors-list" style="margin-top: 2rem; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+          <div class="card distributor-card" data-city="Paris">
+            <div class="card__content">
+              <p class="name">Épicerie du Marais</p>
+              <p class="address">12 rue des Archives, 75004 Paris</p>
+              <p class="phone"><a href="tel:0142781234">01 42 78 12 34</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Paris">
+            <div class="card__content">
+              <p class="name">Naturalia Bastille</p>
+              <p class="address">5 rue de la Roquette, 75011 Paris</p>
+              <p class="phone"><a href="tel:0148057890">01 48 05 78 90</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Lyon">
+            <div class="card__content">
+              <p class="name">Les Halles de Lyon</p>
+              <p class="address">102 cours Lafayette, 69003 Lyon</p>
+              <p class="phone"><a href="tel:0478623333">04 78 62 33 33</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Lyon">
+            <div class="card__content">
+              <p class="name">Bio c' Bon Lyon 2</p>
+              <p class="address">34 rue de la Part-Dieu, 69003 Lyon</p>
+              <p class="phone"><a href="tel:0472618822">04 72 61 88 22</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Marseille">
+            <div class="card__content">
+              <p class="name">La Canebière Bio</p>
+              <p class="address">88 La Canebière, 13001 Marseille</p>
+              <p class="phone"><a href="tel:0491136789">04 91 13 67 89</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Marseille">
+            <div class="card__content">
+              <p class="name">Marché des Capucins</p>
+              <p class="address">Place des Capucins, 13001 Marseille</p>
+              <p class="phone"><a href="tel:0491561234">04 91 56 12 34</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Bordeaux">
+            <div class="card__content">
+              <p class="name">Biocoop Bordeaux Centre</p>
+              <p class="address">18 rue Sainte-Catherine, 33000 Bordeaux</p>
+              <p class="phone"><a href="tel:0556489012">05 56 48 90 12</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Bordeaux">
+            <div class="card__content">
+              <p class="name">Carrefour Market Bordeaux</p>
+              <p class="address">45 cours de l'Intendance, 33000 Bordeaux</p>
+              <p class="phone"><a href="tel:0557221100">05 57 22 11 00</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Toulouse">
+            <div class="card__content">
+              <p class="name">Naturalia Toulouse</p>
+              <p class="address">12 rue du Taur, 31000 Toulouse</p>
+              <p class="phone"><a href="tel:0561224567">05 61 22 45 67</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Toulouse">
+            <div class="card__content">
+              <p class="name">Marché Victor Hugo</p>
+              <p class="address">Place Victor Hugo, 31000 Toulouse</p>
+              <p class="phone"><a href="tel:0561123456">05 61 12 34 56</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Nantes">
+            <div class="card__content">
+              <p class="name">Biocoop Nantes</p>
+              <p class="address">8 rue de la Fosse, 44000 Nantes</p>
+              <p class="phone"><a href="tel:0240891234">02 40 89 12 34</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Nantes">
+            <div class="card__content">
+              <p class="name">Grand Frais Nantes</p>
+              <p class="address">Zone commerciale Atlantis, 44800 Saint-Herblain</p>
+              <p class="phone"><a href="tel:0228012345">02 28 01 23 45</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Strasbourg">
+            <div class="card__content">
+              <p class="name">L'Organic Epicerie</p>
+              <p class="address">22 rue des Grandes Arcades, 67000 Strasbourg</p>
+              <p class="phone"><a href="tel:0388324567">03 88 32 45 67</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Lille">
+            <div class="card__content">
+              <p class="name">Bio c' Bon Lille</p>
+              <p class="address">40 rue de la Grande-Chaussée, 59000 Lille</p>
+              <p class="phone"><a href="tel:0320123456">03 20 12 34 56</a></p>
+            </div>
+          </div>
+          <div class="card distributor-card" data-city="Nice">
+            <div class="card__content">
+              <p class="name">Naturalia Nice</p>
+              <p class="address">15 avenue Jean Médecin, 06000 Nice</p>
+              <p class="phone"><a href="tel:0493876543">04 93 87 65 43</a></p>
+            </div>
+          </div>
+        </div>
+        <p id="distributors-empty" class="text-muted text-center" style="padding: 3rem; display: none;">Aucun distributeur dans cette ville.</p>
+        <section style="margin-top: 4rem; padding: 2rem; border-radius: 1rem; border: 1px solid rgba(170,209,95,0.2); background: rgba(170,209,95,0.1); text-align: center;">
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin: 0;">Devenir distributeur</h2>
+          <p class="text-muted" style="margin-top: 1rem;">Vous êtes épicerie, restaurant ou revendeur ? Proposez Ela Mayo à vos clients.</p>
+          <a href="contact.html" class="btn btn--primary btn--lg mt-6">Nous contacter</a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div><p class="brand">Ela Mayo</p><p class="brand-desc">La mayonnaise premium.</p></div>
+          <div><h4>Navigation</h4><ul><li><a href="story.html">Notre histoire</a></li><li><a href="shop.html">Boutique</a></li><li><a href="recipes.html">Recettes</a></li><li><a href="distributors.html">Distributeurs</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+          <div><h4>Newsletter</h4><form class="newsletter-form" onsubmit="return false;"><input type="email" class="input" placeholder="votre@email.fr"><button type="submit" class="btn btn--primary">OK</button></form></div>
+        </div>
+        <div class="footer-bottom">© <span id="year"></span> Ela Mayo. Tous droits réservés.</div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function() {
+      var select = document.getElementById('city-filter');
+      var list = document.getElementById('distributors-list');
+      var empty = document.getElementById('distributors-empty');
+      var cards = list ? list.querySelectorAll('.distributor-card') : [];
+      function filter() {
+        var city = (select && select.value) || '';
+        var n = 0;
+        cards.forEach(function(card) {
+          var show = !city || (card.dataset.city === city);
+          card.style.display = show ? '' : 'none';
+          if (show) n++;
+        });
+        if (empty) empty.style.display = n ? 'none' : 'block';
+      }
+      if (select) select.addEventListener('change', filter);
+    })();
+  </script>
+</body>
+</html>

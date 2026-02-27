@@ -1,0 +1,10 @@
+# Système
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+.vscode
+
+# Dossier Mayo (sous-dépôt ou doublon)
+/Mayo/

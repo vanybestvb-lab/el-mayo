@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ela Mayo — Mayonnaise premium</title>
+  <meta name="description" content="Découvrez Ela Mayo, la mayonnaise premium au goût authentique. Recettes, boutique et points de vente.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="site-header">
+      <div class="container inner">
+        <a href="index.html" class="logo-link">
+          <img src="public/images/Logo.png" alt="Ela Mayo" class="logo">
+        </a>
+        <nav class="nav-main">
+          <a href="index.html">Accueil</a>
+          <a href="story.html">Notre histoire</a>
+          <a href="shop.html">Boutique</a>
+          <a href="recipes.html">Recettes</a>
+          <a href="distributors.html">Distributeurs</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="cart.html" class="btn-icon" aria-label="Panier">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="cart-count" id="header-cart-count" style="display: none;">0</span>
+          </a>
+          <button type="button" class="btn-icon menu-toggle" id="menu-toggle" aria-label="Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <nav class="nav-main">
+          <a href="index.html">Accueil</a>
+          <a href="story.html">Notre histoire</a>
+          <a href="shop.html">Boutique</a>
+          <a href="recipes.html">Recettes</a>
+          <a href="distributors.html">Distributeurs</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="public/images/Hero.png" alt="Ela Mayo — Mayonnaise premium">
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="container content">
+          <h1>La mayonnaise qui change tout</h1>
+          <p>Ela Mayo, c'est le goût authentique, des ingrédients simples et une recette sans compromis. Pour le quotidien comme pour les grandes tablées.</p>
+          <div class="actions">
+            <a href="shop.html" class="btn btn--primary btn--lg">Découvrir la boutique</a>
+            <a href="story.html" class="btn btn--outline-cream btn--lg">Notre histoire</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container text-center">
+          <h2 class="section-title">Une promesse simple : du bon, du vrai</h2>
+          <div class="grid-3">
+            <div class="card">
+              <div class="card__content">
+                <div style="font-size: 2rem;">🥚</div>
+                <h3 style="margin-top: 0.5rem; font-weight: 600;">Ingrédients naturels</h3>
+                <p class="text-muted" style="margin-top: 0.25rem; font-size: 0.875rem;">Pas d'arômes artificiels, pas de conservateurs inutiles. Du jaune d'œuf, de l'huile, du vinaigre et de la moutarde.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__content">
+                <div style="font-size: 2rem;">🌿</div>
+                <h3 style="margin-top: 0.5rem; font-weight: 600;">Fabriqué en France</h3>
+                <p class="text-muted" style="margin-top: 0.25rem; font-size: 0.875rem;">Nos mayonnaises sont produites dans nos ateliers pour garantir fraîcheur et qualité.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__content">
+                <div style="font-size: 2rem;">✨</div>
+                <h3 style="margin-top: 0.5rem; font-weight: 600;">Toujours onctueuse</h3>
+                <p class="text-muted" style="margin-top: 0.25rem; font-size: 0.875rem;">Une texture crémeuse et un équilibre parfait pour accompagner tous vos plats.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
+            <h2 class="section-title" style="margin: 0; text-align: left;">Les incontournables</h2>
+            <a href="shop.html" class="btn btn--outline">Voir toute la boutique</a>
+          </div>
+          <div class="product-grid cols-4" style="margin-top: 2rem;">
+            <article class="card product-card card--hover">
+              <a href="shop/classic-mayonnaise.html">
+                <div class="card__media">
+                  <img src="public/images/1.png" alt="Mayonnaise Classique">
+                </div>
+              </a>
+              <div class="card__content">
+                <div class="badges"><span class="badge badge--outline">Classique</span></div>
+                <h3><a href="shop/classic-mayonnaise.html">Mayonnaise Classique</a></h3>
+                <p class="tagline">La recette signature, onctueuse et équilibrée</p>
+                <p class="price">4,90 EUR <span>— 250 ml</span></p>
+              </div>
+              <div class="card__footer">
+                <a href="shop/classic-mayonnaise.html" class="btn btn--primary btn--full">Voir le produit</a>
+              </div>
+            </article>
+            <article class="card product-card card--hover">
+              <a href="shop/vegan-mayonnaise.html">
+                <div class="card__media">
+                  <img src="public/images/2.png" alt="Mayonnaise Végétale">
+                </div>
+              </a>
+              <div class="card__content">
+                <div class="badges"><span class="badge badge--vegan">Végan</span></div>
+                <h3><a href="shop/vegan-mayonnaise.html">Mayonnaise Végétale</a></h3>
+                <p class="tagline">100 % végétale, même onctuosité</p>
+                <p class="price">5,20 EUR <span>— 250 ml</span></p>
+              </div>
+              <div class="card__footer">
+                <a href="shop/vegan-mayonnaise.html" class="btn btn--primary btn--full">Voir le produit</a>
+              </div>
+            </article>
+            <article class="card product-card card--hover">
+              <a href="shop/spicy-mayonnaise.html">
+                <div class="card__media">
+                  <img src="public/images/3.png" alt="Mayonnaise Piquante">
+                </div>
+              </a>
+              <div class="card__content">
+                <div class="badges"><span class="badge badge--spicy">Piquant</span></div>
+                <h3><a href="shop/spicy-mayonnaise.html">Mayonnaise Piquante</a></h3>
+                <p class="tagline">Une touche de piment pour réveiller vos plats</p>
+                <p class="price">5,50 EUR <span>— 250 ml</span></p>
+              </div>
+              <div class="card__footer">
+                <a href="shop/spicy-mayonnaise.html" class="btn btn--primary btn--full">Voir le produit</a>
+              </div>
+            </article>
+            <article class="card product-card card--hover">
+              <a href="shop/light-mayonnaise.html">
+                <div class="card__media">
+                  <img src="public/images/4.png" alt="Mayonnaise Légère">
+                </div>
+              </a>
+              <div class="card__content">
+                <div class="badges"><span class="badge badge--light">Léger</span></div>
+                <h3><a href="shop/light-mayonnaise.html">Mayonnaise Légère</a></h3>
+                <p class="tagline">–30 % de matières grasses, plein de goût</p>
+                <p class="price">4,70 EUR <span>— 250 ml</span></p>
+              </div>
+              <div class="card__footer">
+                <a href="shop/light-mayonnaise.html" class="btn btn--primary btn--full">Voir le produit</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title" style="text-align: left;">Inspiration recettes</h2>
+          <p class="text-muted">Des idées simples pour sublimer vos plats avec Ela Mayo.</p>
+          <div class="product-grid cols-3" style="margin-top: 2rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+            <article class="card recipe-card card--hover">
+              <a href="recipes/burger-maison.html">
+                <div class="card__media">
+                  <img src="public/images/recette/1.png" alt="Burger maison à l'Ela Mayo">
+                </div>
+              </a>
+              <div class="card__content">
+                <h3><a href="recipes/burger-maison.html">Burger maison à l'Ela Mayo</a></h3>
+                <p class="description">Un burger généreux avec notre sauce burger et mayonnaise classique.</p>
+                <p class="meta">35 min · 4 pers.</p>
+              </div>
+            </article>
+            <article class="card recipe-card card--hover">
+              <a href="recipes/frites-maison-sauce-aioli.html">
+                <div class="card__media">
+                  <img src="public/images/recette/2.png" alt="Frites maison et aïoli">
+                </div>
+              </a>
+              <div class="card__content">
+                <h3><a href="recipes/frites-maison-sauce-aioli.html">Frites maison et aïoli</a></h3>
+                <p class="description">Frites croustillantes accompagnées de notre aïoli.</p>
+                <p class="meta">35 min · 4 pers.</p>
+              </div>
+            </article>
+            <article class="card recipe-card card--hover">
+              <a href="recipes/wrap-vegan-piquante.html">
+                <div class="card__media">
+                  <img src="public/images/recette/3.png" alt="Wrap vegan à la mayo piquante">
+                </div>
+              </a>
+              <div class="card__content">
+                <h3><a href="recipes/wrap-vegan-piquante.html">Wrap vegan à la mayo piquante</a></h3>
+                <p class="description">Wrap coloré avec légumes et mayonnaise végétale piquante.</p>
+                <p class="meta">15 min · 2 pers.</p>
+              </div>
+            </article>
+          </div>
+          <p class="text-center mt-6">
+            <a href="recipes.html" class="btn btn--primary btn--lg">Toutes les recettes</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--yellow">
+        <div class="container text-center">
+          <h2 class="section-title" style="color: white;">Prêt à goûter la différence ?</h2>
+          <p style="color: white; margin-top: 1rem;">Découvrez toute notre gamme en boutique.</p>
+          <a href="shop.html" class="btn btn--primary btn--lg mt-6" style="background: var(--color-red); color: var(--color-cream);">Voir la boutique</a>
+        </div>
+      </section>
+
+      <section class="section section--blue-bg">
+        <div class="container flex-wrap">
+          <span class="text-muted" style="font-size: 0.875rem; font-weight: 500;">Fabriqué en France</span>
+          <span class="text-muted" style="font-size: 0.875rem; font-weight: 500;">Ingrédients naturels</span>
+          <span class="text-muted" style="font-size: 0.875rem; font-weight: 500;">Sans colorants</span>
+          <span class="text-muted" style="font-size: 0.875rem; font-weight: 500;">Recettes traditionnelles</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <p class="brand">Ela Mayo</p>
+            <p class="brand-desc">La mayonnaise premium, naturelle et savoureuse.</p>
+          </div>
+          <div>
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="story.html">Notre histoire</a></li>
+              <li><a href="shop.html">Boutique</a></li>
+              <li><a href="recipes.html">Recettes</a></li>
+              <li><a href="distributors.html">Distributeurs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Newsletter</h4>
+            <p class="brand-desc">Inscrivez-vous pour recevoir nos actualités et offres (UI uniquement).</p>
+            <form class="newsletter-form" action="#" method="post" onsubmit="return false;">
+              <input type="email" class="input" placeholder="votre@email.fr" aria-label="Email pour la newsletter">
+              <button type="submit" class="btn btn--primary">OK</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © <span id="year"></span> Ela Mayo. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
